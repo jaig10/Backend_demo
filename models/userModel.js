@@ -17,8 +17,12 @@ const userSchema = new mongoose.Schema(
         role:{
             type:String,
             required:true,
+            enum:["user","admin","dealer"],
             default:"user"
         },
+        commission_rate:{
+            type:String
+        }
     }
 )
 

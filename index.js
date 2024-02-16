@@ -8,12 +8,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const userRoute = require("./routes/usersRoute");
-const dealersRoute = require("./routes/dealersRoute");
 const adminRoute = require("./routes/adminRoute");
+const productRoute = require("./routes/productRoute");
 
 app.use("/api/user", userRoute);
-app.use("/api/dealer", dealersRoute);
 app.use("/api/admin", adminRoute);
+app.use("/api/product", productRoute);
 
 app.get("/", (req, res) => {
   console.log("hello world!");

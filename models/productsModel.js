@@ -12,13 +12,7 @@ const productsSchema = mongoose.Schema({
     price:{
         type:String,
         required:true,
-    },
-    admin_id:{
-        type:String,
-        required:true,
-    },
-
-
+    }
 })
 
 const productsModel = mongoose.model("products", productsSchema);
